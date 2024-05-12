@@ -894,6 +894,14 @@ campaignTrail_temp.answers_json = [
     },
     {
         "model": "campaign_trail.answer",
+        "pk": 196773,
+        "fields": {
+            "question": 4021,
+            "description": "A vote for Nixon is a vote for war-hawks that will send your children to die in a jungle. A vote for Nixon is a vote for elites that see you as a statistic. Voting for Nixon will hurt LBJ's programs. Do you really want this reckless Republican in office?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
         "pk": 9169,
         "fields": {
             "question": 4021,
@@ -2470,7 +2478,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 24,
             "state": 114,
-            "state_multiplier": 1.04
+            "state_multiplier": 1.12
         }
     },
     {
@@ -2605,7 +2613,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 24,
             "state": 129,
-            "state_multiplier": 1.04
+            "state_multiplier": 1.125
         }
     },
     {
@@ -2668,7 +2676,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 24,
             "state": 136,
-            "state_multiplier": 1.04
+            "state_multiplier": 1.16
         }
     },
     {
@@ -3694,6 +3702,16 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
+        "pk": 196775,
+        "fields": {
+            "answer": 196773,
+            "candidate": 24,
+            "affected_candidate": 23,
+            "global_multiplier": -0.0231
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
         "pk": 694,
         "fields": {
             "answer": 1655,
@@ -4309,7 +4327,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 9166,
             "candidate": 24,
             "affected_candidate": 24,
-            "global_multiplier": 0.015
+            "global_multiplier": -0.009
         }
     },
     {
@@ -6555,7 +6573,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 9166,
             "candidate": 24,
-            "answer_feedback": "<b>Colonel:</b> This kind of statement only hurts you. People already think you're a yokel.<br><b>Vernon:</b> That bastard Nixon will learn what you're about!"
+            "answer_feedback": "<b>Colonel:</b> This kind of statement only hurts you. Inflation is terrible.<br><b>Vernon:</b> That bastard Nixon will learn what you're about!"
         }
     },
     {
@@ -6628,6 +6646,15 @@ campaignTrail_temp.answer_feedback_json = [
             "answer": 9195,
             "candidate": 24,
             "answer_feedback": "Your foray into experimental psychedelia, called \"Bonnie Blue\", was a complete flop. This might be remembered by some loser beatniks, but you might've cost even your musical career with this gamble."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 196774,
+        "fields": {
+            "answer": 196773,
+            "candidate": 24,
+            "answer_feedback": "<b>Colonel:</b> Way to put the campaign on the gutter, Elvis.<br><b>Vernon:</b> Nixon sounds like an asshole to me."
         }
     },
     {
