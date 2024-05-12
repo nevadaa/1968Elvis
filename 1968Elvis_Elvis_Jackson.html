@@ -112,7 +112,7 @@ campaignTrail_temp.questions_json = [
         "pk": 4026,
         "fields": {
             "priority": 0,
-            "description": "Many have been itching to hear why you've chosen Robert F. Kennedy as your running mate. Some have even accused you of being his proxy, as a mere figurehead. How do you counter these claims and justify your appointing of him?",
+            "description": "Do you have any statements regarding your running mate, Scoop Jackson, and his policy record in Washington State?",
             "likelihood": 1
         }
     },
@@ -1033,7 +1033,7 @@ campaignTrail_temp.answers_json = [
         "pk": 9232,
         "fields": {
             "question": 4026,
-            "description": "Bobby is a great guy. He's been a champion of the little guy for years, and I appreciate his career record on many issues. Insinuating that I'm his \"puppet\" is a low blow from the Nixon campaign."
+            "description": "Scoop Jackson's a great guy. He's down-to-earth, comes from a family of immigrants and cares deeply about the people of the Rockies and Seattle. He's just what this country needs for the new generation of Americans."
         }
     },
     {
@@ -1041,7 +1041,7 @@ campaignTrail_temp.answers_json = [
         "pk": 9233,
         "fields": {
             "question": 4026,
-            "description": "I have many ideological differences with Bobby, and to accuse me of being a proxy to his ideas is ridiculous. We're sharing a ticket, and both of our viewpoints will be addressed during policymaking."
+            "description": "I have disagreements with Scoop here and there, but it's best to emphasize that we're both looking to unite our parties under a banner of moderation and common sense."
         }
     },
     {
@@ -1073,7 +1073,7 @@ campaignTrail_temp.answers_json = [
         "pk": 9234,
         "fields": {
             "question": 4026,
-            "description": "As if Nixon wasn't a puppet of big business, a puppet of war profiteers and a puppet of the elites. If I'm a puppet to progressive ideas, then so damn be it."
+            "description": "Scoop Jackson has an excellent policy record in Washington State and I'm proud to have him on my ticket as a representative of the Democrats."
         }
     },
     {
@@ -4479,7 +4479,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 9232,
             "candidate": 24,
             "affected_candidate": 24,
-            "global_multiplier": 0.009
+            "global_multiplier": -0.009
         }
     },
     {
@@ -4489,17 +4489,27 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 9233,
             "candidate": 24,
             "affected_candidate": 24,
-            "global_multiplier": 0.014
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 11112,
+        "fields": {
+            "answer": 9234,
+            "candidate": 24,
+            "affected_candidate": 24,
+            "global_multiplier": -0.006
         }
     },
     {
         "model": "campaign_trail.answer_score_global",
         "pk": 1979,
         "fields": {
-            "answer": 9234,
+            "answer": 9232,
             "candidate": 24,
             "affected_candidate": 24,
-            "global_multiplier": -0.01
+            "global_multiplier": 0.01
         }
     },
     {
@@ -4613,6 +4623,26 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue": 13,
             "issue_score": 0.88,
             "issue_importance": 15
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 1994,
+        "fields": {
+            "answer": 9232,
+            "issue": 13,
+            "issue_score": 0.33,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 1994,
+        "fields": {
+            "answer": 9232,
+            "issue": 13,
+            "issue_score": -0.22,
+            "issue_importance": 10
         }
     },
     {
@@ -6812,27 +6842,27 @@ campaignTrail_temp.answer_feedback_json = [
         "model": "campaign_trail.answer_feedback",
         "pk": 1974,
         "fields": {
-            "answer": 9232,
+            "answer": 9233,
             "candidate": 24,
-            "answer_feedback": "<b>Colonel:</b> Good on you for deflecting the issue entirely as Nixon's doing.<br><b>Vernon:</b> You sounded paranoid. Are you alright?"
+            "answer_feedback": "<b>Colonel:</b> It's good to focus on your moderate, syncretic outlook.<br><b>Vernon:</b> Pretty standard response."
         }
     },
     {
         "model": "campaign_trail.answer_feedback",
         "pk": 1975,
         "fields": {
-            "answer": 9233,
+            "answer": 9234,
             "candidate": 24,
-            "answer_feedback": "<b>Colonel:</b> This is an overall good answer that might imply a stronger Vice-President, but that's it.<br><b>Vernon:</b> I don't know much about this Bobby guy."
+            "answer_feedback": "<b>Colonel:</b> A lot of words to say nothing at all.<br><b>Vernon:</b> You sounded dull, son. Where's Elvis?"
         }
     },
     {
         "model": "campaign_trail.answer_feedback",
         "pk": 1976,
         "fields": {
-            "answer": 9234,
+            "answer": 9232,
             "candidate": 24,
-            "answer_feedback": "<b>Colonel:</b> ...Yeah! Good sense of conviction! Explosive words! Lovin' it!<br><b>Vernon:</b> Yeah! That's what I'm talking about!"
+            "answer_feedback": "<b>Colonel:</b> Completely innofensive answer.<br><b>Vernon:</b> Emphasizing that he's the son of immigrants helps with your base."
         }
     },
     {
@@ -6882,8 +6912,8 @@ campaignTrail_temp.answer_feedback_json = [
     }
 ]
 campaignTrail_temp.candidate_image_url = 'https://i.ibb.co/1njBgKd/image.png'; 
-campaignTrail_temp.running_mate_image_url = 'https://i.ibb.co/1MY7BGr/image.png'; 
+campaignTrail_temp.running_mate_image_url = 'https://i.ibb.co/DLzbv20/image.png'; 
 campaignTrail_temp.candidate_last_name = 'Presley'; 
-campaignTrail_temp.running_mate_last_name = 'Kennedy'; 
-campaignTrail_temp.running_mate_state_id = '128'; 
+campaignTrail_temp.running_mate_last_name = 'Jackson'; 
+campaignTrail_temp.running_mate_state_id = '143'; 
 campaignTrail_temp.answer_feedback_flg = 1; 
