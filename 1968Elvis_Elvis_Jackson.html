@@ -15,6 +15,13 @@ return campaignTrail_temp.questions_json.map(q=>q.pk).indexOf(pk)-1;
 }
 
 cyoAdventure = function (a) {
+
+    e.multiple_endings = true;
+
+    e.header = "<h1>error</h1>";
+    e.pages = ["<p>This is an error handler</p>"];
+    e.page = 0;
+
 ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
 
 if (ans == 1705) {
@@ -109,7 +116,6 @@ getResults = function (out, totv, aa, quickstats) {
 if( aa[0].candidate === 24 && stateResult.result[0].candidate == 23 (quickstats[0] >= 270)) {
     unlockAchievement("Hotel Nevada");
 }
-};
 if(quickstats[0] >= 270 && (e.player_answers.includes(9195))){
     ctsAchievement("Stick To Politics, Boy"); 
 };
@@ -117,7 +123,7 @@ if(quickstats[0] >= 270 && (e.player_answers.includes(9188))){
     ctsAchievement("Stick To Politics, Boy"); 
 };
 if(quickstats[0] >= 270 && (e.player_answers.includes(9124))){
-    ctsAchievement("As Elvis, fail your latest musical endeavor, and still win the election."); 
+    ctsAchievement("Leaving Memphis Town"); 
 };
 if(quickstats[0] < 270 && (e.player_answers.includes(9183))){
     ctsAchievement("Stick To Music, Boy"); 
@@ -137,9 +143,10 @@ if(quickstats[0] >= 270 && (e.player_answers.includes(1656)||(e.player_answers.i
 if(quickstats[0] >= 401 ){
     ctsAchievement("Rock Against Nixon"); 
 }
+}
 getResults = function (out, totv, aa, quickstats) {
     let stateResult = campaignTrail_temp.final_state_results.find((x) => x.state == 105)
-if( aa[0].candidate === 24 && stateResult.result[0].candidate == 24 (quickstats[0] >= 270)) {
+if( aa[0].candidate === 24 && stateResult.result[0].candidate == 24) {
     unlockAchievement("Gators For Elvis");
 }
 }
