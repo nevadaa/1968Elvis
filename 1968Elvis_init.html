@@ -137,6 +137,29 @@ campaignTrail_temp.candidate_json = [
     },
     {
       "model": "campaign_trail.candidate",
+      "pk": 1005,
+      "fields": {
+          "first_name": "John",
+          "last_name": "Connally",
+          "election": 4,
+          "party": "Democrat",
+          "state": "Texas",
+          "priority": 36,
+          "description": "n/a",
+          "color_hex": "#0000FF",
+          "secondary_color_hex": "#90C0FF",
+          "is_active": 0,
+          "image_url": "https://i.ibb.co/WxqrnMj/image.png",
+          "electoral_victory_message": "n/a",
+          "electoral_loss_message": "n/a",
+          "no_electoral_majority_message": "n/a",
+          "description_as_running_mate": "<div style='overflow-y:scroll;height:200px;'>John Connally is the current Governor of Texas, and before that, was President Kennedy's Secretary of the Navy. Connally gained some of his fame through the Assassination of President Kennedy. Connally was not only in the same as Kennedy, but was injured as well, however he was able to recover.<br>Governor Connally is a Conservative Democrat, which although could help the Democratic Party win the South again, would harm with Northern voters, who want someone more Liberal as your VP.<br>Connally would be a great choice for rebuilding the former Democratic South, at the cost of the more recent Democratic North.</div>",
+          "candidate_score": 0,
+          "running_mate": true
+      }
+  },
+    {
+      "model": "campaign_trail.candidate",
       "pk": 1004,
       "fields": {
           "first_name": "Henry M. \"Scoop\"",
@@ -153,34 +176,11 @@ campaignTrail_temp.candidate_json = [
           "electoral_victory_message": "n/a",
           "electoral_loss_message": "n/a",
           "no_electoral_majority_message": "n/a",
-          "description_as_running_mate": "<div style='overflow-y:scroll;height:200px;'>desc</div>",
+          "description_as_running_mate": "<div style='overflow-y:scroll;height:200px;'><p>You look at the bottom of your shortlist, and a certain name pops out at you: Henry M. Jackson.<br>The current Senator from Washington, Henry, or Scoop as everyone calls him, has had quite a career. Originally a lawyer, he ran for Washington's 2nd Congressional Seat in 1940, and actually won. He stayed in that district until 1952 when he ran for the United States Senate and has been there ever since. Along with that, he has been a massive supporter of Civil Rights and the many programs that sprouted from FDR's New Deal.<br>However, there are some drawbacks to Scoop. Firstly, Scoop has been a proponent of the Vietnam War, having spoken for continued American involvement in the region, which has provoked the ire of many Peace Democrats, and younger voters. Along with that, he has given the reputation of being the \"Senator from Boeing\", mainly because of his close ties to the defense industry.<br>Scoop Jackson would a choice that could keep the Democratic North strong, but harm it at the same time with his hawkishness.</p></div>",
           "candidate_score": 0,
           "running_mate": true
       }
   },
-  {
-    "model": "campaign_trail.candidate",
-    "pk": 1005,
-    "fields": {
-        "first_name": "John",
-        "last_name": "Connally",
-        "election": 4,
-        "party": "Democrat",
-        "state": "Texas",
-        "priority": 36,
-        "description": "n/a",
-        "color_hex": "#0000FF",
-        "secondary_color_hex": "#90C0FF",
-        "is_active": 0,
-        "image_url": "https://i.ibb.co/WxqrnMj/image.png",
-        "electoral_victory_message": "n/a",
-        "electoral_loss_message": "n/a",
-        "no_electoral_majority_message": "n/a",
-        "description_as_running_mate": "<div style='overflow-y:scroll;height:200px;'>desc</div>",
-        "candidate_score": 0,
-        "running_mate": true
-    }
-},
     {
         "model": "campaign_trail.candidate",
         "pk": 63,
@@ -274,7 +274,7 @@ campaignTrail_temp.running_mate_json = [
 
 campaignTrail_temp.credits = "<button onclick='credits()'>Various people</button>";
   credits = function() {
-    credits = ["CODERS", "Garden of Light, CatBoxx", "", "WRITER", "Yet Another Nerd", "", "SPECIAL THANKS", "Astro, DecstarG for the Soundtrack code and all the lovely playtesters we had along the way!"]
+    credits = ["CODERS", "Garden of Light, CatBoxx", "", "WRITER", "Yet Another Nerd", "", "SPECIAL THANKS", "Astro, DecstarG for the Soundtrack and ending code and all the lovely playtesters we had along the way!"]
     text = "CREDITS:\n\n"
     for (i in credits) {
         text += credits[i] + "\n"
