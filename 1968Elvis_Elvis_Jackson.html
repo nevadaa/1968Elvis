@@ -1,5 +1,5 @@
 
-function unlockAchievement(achievement, difficultyChecker = true){
+function ctsAchievement(achievement, difficultyChecker = true){
 	if ((difficultyChecker && campaignTrail_temp.difficulty_level_multiplier<=1)||!difficultyChecker)
 		if(campaignTrail_temp.CTS){
 		unlockAchievement(achievement);
@@ -16,6 +16,10 @@ return campaignTrail_temp.questions_json.map(q=>q.pk).indexOf(pk)-1;
 cyoAdventure = function (a) {
 
 ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
+
+if (ans == 3251){
+    ctsAchievement("Dummy Achievement")
+}
 
 if (ans == 1705) {
 campaignTrail_temp.question_number = getQuestionNumberFromPk(40016);
@@ -7013,7 +7017,7 @@ endingPicker = (out, totv, aa, quickstats) => {
   else if(quickstats[0] >= 400) {
     e.image = ["https://i.ibb.co/Ldy6fKr/image.png"];
     e.header = "<h3>Viva Las Vegas</h3>";
-    e.pages = ["<p>Despite naysayers across the country, angry lobbyists and Nixon himself, you have managed a sweeping victory across the United States of America. Against even your most optimistic polling, you've created an incredible electoral majority and presidential mandate through a combination of charisma, negotiations and sheer luck. Through your tenacious leadership, the Democratic Party has not only survived, but rebounded at unimaginable levels. You have successfully brought youthful and powerful leadership, and now the whole country awaits in bated breath to see what you will do with your mandate. Vietnam may be going on, the economy may be bad, but by God you know exactly what to do! Right?<br><br>Right?</p>"];
+    e.pages = ["<p>Despite naysayers across the country, angry lobbyists and Nixon himself, you have managed a sweeping victory across the United States of America. Against even your most optimistic polling, you've created an incredible electoral majority and presidential mandate through a combination of charisma, negotiations and sheer luck. Through your tenacious leadership, the Democratic Party has not only survived, but rebounded at unimaginable levels. You have successfully brought youthful and powerful leadership, and now the whole country awaits in bated breath to see what you will do with your mandate. Vietnam may be going on, the economy may be bad, but by God you know exactly what to do. You will transform this country into its true soul, and bring salvation to its people. God bless you Elvis, God bless America, and in God we Trust!</p>"];
     return construct(0);
 }
   else if(quickstats[0] <= 270) {
@@ -7027,42 +7031,42 @@ endingPicker = (out, totv, aa, quickstats) => {
   getResults = function (out, totv, aa, quickstats) {
       let stateResult = campaignTrail_temp.final_state_results.find((x) => x.state == 105)
   if( aa[0].candidate === 24 && stateResult.result[0].candidate == 24) {
-      unlockAchievement("Gators For Elvis");
+      ctsAchievement("Gators For Elvis");
   }
   }  
 getResults = function (out, totv, aa, quickstats) {
     let stateResult = campaignTrail_temp.final_state_results.find((x) => x.state == 101)
 if( aa[0].candidate === 24 && stateResult.result[0].candidate == 23 (quickstats[0] >= 270)) {
-    unlockAchievement("Hotel Nevada");
+    ctsAchievement("Hotel Nevada");
 }
 }  
 getResults = function (out, totv, aa, quickstats) {
 if(quickstats[0] >= 270 && (e.player_answers.includes(9195))){
-    unlockAchievement("Stick To Politics, Boy"); 
+    ctsAchievement("Stick To Politics, Boy"); 
 };
 if(quickstats[0] >= 270 && (e.player_answers.includes(9188))){
-    unlockAchievement("Stick To Politics, Boy"); 
+    ctsAchievement("Stick To Politics, Boy"); 
 };
 if(quickstats[0] >= 270 && (e.player_answers.includes(9124))){
-    unlockAchievement("Leaving Memphis Town"); 
+    ctsAchievement("Leaving Memphis Town"); 
 };
 if(quickstats[0] < 270 && (e.player_answers.includes(9183))){
-    unlockAchievement("Stick To Music, Boy"); 
+    ctsAchievement("Stick To Music, Boy"); 
 };
 if(quickstats[0] < 270 && (e.player_answers.includes(9191))){
-    unlockAchievement("Stick To Music, Boy"); 
+    ctsAchievement("Stick To Music, Boy"); 
 };
 if(quickstats[0] < 270 && (e.player_answers.includes(9209))){
-    unlockAchievement("Jailhouse Rock"); 
+    ctsAchievement("Jailhouse Rock"); 
 };
 if(quickstats[0] >= 270 && (e.player_answers.includes(9209))){ //how?
-    unlockAchievement("Jailhouse Rock"); 
+    ctsAchievement("Jailhouse Rock"); 
 };
 if(quickstats[0] >= 270 && (e.player_answers.includes(1656)||(e.player_answers.includes(1676) )||(e.player_answers.includes(1714)))){ //how?
-    unlockAchievement("Flowers In Your Greaser"); 
+    ctsAchievement("Flowers In Your Greaser"); 
 };
 if(quickstats[0] >= 401 ){
-    unlockAchievement("Rock Against Nixon"); 
+    ctsAchievement("Rock Against Nixon"); 
 }
 }
 }
